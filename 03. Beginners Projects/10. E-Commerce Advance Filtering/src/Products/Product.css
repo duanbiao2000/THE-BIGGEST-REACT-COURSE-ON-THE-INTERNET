@@ -1,47 +1,56 @@
+/* 定义卡片容器的样式 */
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 20rem;
-  margin-top: 2rem;
-  z-index: -2;
+  display: flex; /* 使用flex布局 */
+  flex-wrap: wrap; /* 允许换行 */
+  margin-left: 20rem; /* 左边距 */
+  margin-top: 2rem; /* 上边距 */
+  z-index: -2; /* 层叠顺序 */
 }
 
+/* 定义卡片的样式 */
 .card {
-  margin: 20px;
-  border: 2px solid #ededed;
-  padding: 20px;
-  cursor: pointer;
+  margin: 20px; /* 外边距 */
+  border: 2px solid #ededed; /* 边框样式 */
+  padding: 20px; /* 内边距 */
+  cursor: pointer; /* 鼠标悬停样式 */
 }
 
+/* 定义卡片图片的样式 */
 .card-img {
-  width: 13rem;
-  margin-bottom: 1rem;
+  width: 13rem; /* 图片宽度 */
+  margin-bottom: 1rem; /* 与下方元素的间距 */
 }
 
+/* 定义卡片标题的样式 */
 .card-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* 与下方元素的间距 */
 }
 
+/* 定义卡片评论区域的样式 */
 .card-reviews {
-  margin-bottom: 1rem;
-  display: flex;
+  margin-bottom: 1rem; /* 与下方元素的间距 */
+  display: flex; /* 使用flex布局 */
 }
 
+/* 定义评分星星的样式 */
 .rating-star {
-  color: #d5ab55;
+  color: #d5ab55; /* 星星颜色 */
 }
 
+/* 定义评论总数的样式 */
 .total-reviews {
-  font-size: 0.9rem;
-  margin-left: 10px;
+  font-size: 0.9rem; /* 字体大小 */
+  margin-left: 10px; /* 与左边元素的间距 */
 }
 
+/* 定义卡片价格区域的样式 */
 .card-price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* 使用flex布局 */
+  justify-content: space-between; /* 内容之间的空间分配 */
+  align-items: center; /* 垂直居中对齐 */
 }
 
+/* 定义购物袋图标的样式 */
 .bag-icon {
-  color: #535353;
+  color: #535353; /* 图标颜色 */
 }

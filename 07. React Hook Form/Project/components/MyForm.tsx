@@ -12,14 +12,16 @@ interface FormData {
   completeLocation: string;
 }
 
+// 定义一个React函数组件MyForm
 const MyForm: React.FC = () => {
+  // 使用useForm钩子，定义表单数据类型为FormData
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
 
-  // Define the submit handler with the proper type
+  // 定义提交处理函数，参数类型为FormData
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log(data);
   };
@@ -39,12 +41,15 @@ const MyForm: React.FC = () => {
         </div>
 
         <div>
+          {/* 为LastName添加标签 */}
           <label htmlFor="lastName">Last Name</label>
+          {/* 为LastName添加输入框，并使用register函数进行验证 */}
           <input
             id="lastName"
             type="text"
             {...register("lastName", { required: "Last Name is required" })}
           />
+          {/* 如果LastName输入框有错误，则显示错误信息 */}
           {errors.lastName && <p>{errors.lastName.message}</p>}
         </div>
 

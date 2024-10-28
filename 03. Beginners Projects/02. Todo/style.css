@@ -1,9 +1,11 @@
+/* 重置所有元素的内边距和外边距，并设置盒模型为 border-box */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* 设置 body 背景颜色，高度为视窗高度的 100%，并居中显示内容 */
 body {
   background: #f5f9eb;
   height: 100vh;
@@ -12,11 +14,13 @@ body {
   align-items: center;
 }
 
+/* 设置容器的背景颜色和内边距 */
 .container {
   background: #fcfff3;
   padding: 50px;
 }
 
+/* 设置输入框的样式：内边距、无边框、无焦点轮廓、背景颜色、宽度和右侧外边距 */
 input {
   padding: 15px;
   border: none;
@@ -26,6 +30,7 @@ input {
   margin-right: 10px;
 }
 
+/* 设置按钮的样式：圆角、背景颜色、内边距、无焦点轮廓、无边框、文本颜色和光标样式 */
 button {
   border-radius: 100px;
   background: #454545;
@@ -37,10 +42,12 @@ button {
   cursor: pointer;
 }
 
+/* 设置待办事项列表的上外边距 */
 .todos-list {
   margin-top: 3rem;
 }
 
+/* 设置单个待办事项的样式：无列表符号、使用 flex 布局、背景颜色、内边距、外边距和字体 */
 .todo {
   list-style: none;
   display: flex;
@@ -52,6 +59,7 @@ button {
   font-family: sans-serif;
 }
 
+/* 设置关闭按钮的样式：内边距和光标样式 */
 .close {
   padding: 5px 10px;
   cursor: pointer;

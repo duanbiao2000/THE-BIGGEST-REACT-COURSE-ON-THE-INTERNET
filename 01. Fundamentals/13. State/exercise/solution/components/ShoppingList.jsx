@@ -8,12 +8,15 @@ const ShoppingList = () => {
 
   // Function to handle form submission
   const handleSubmit = (e) => {
+    // Prevent the default form submission behavior
     e.preventDefault();
 
+    // Check if name and quantity are both filled, otherwise do nothing
     if (!name || !quantity) return;
 
     // Create a new item object
     const newItem = {
+      // Use the values of name and quantity to create properties of the newItem object
       name,
       quantity: parseInt(quantity),
     };

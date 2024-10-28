@@ -1,9 +1,11 @@
+/* 重置所有元素的内边距、外边距，并设置盒模型为 border-box */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* 设置项目容器为 flex 布局，允许换行，内容之间平均分配空间，并在外围添加间距 */
 .items-container {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +13,7 @@
   margin: 10px;
 }
 
+/* 配置卡片的样式：背景色、字体大小、颜色、外边距、内边距、过渡效果和光标样式 */
 .card {
   background: rgb(255, 249, 249);
   font-size: 12px;
@@ -21,10 +24,12 @@
   cursor: pointer;
 }
 
+/* 当鼠标悬停在卡片上时，卡片放大 1.1 倍 */
 .card:hover {
   transform: scale(1.1);
 }
 
+/* 设置内容区域为 flex 布局，内容之间平均分配空间，设置字体类型和上边距 */
 .content {
   display: flex;
   justify-content: space-between;
@@ -32,10 +37,12 @@
   margin-top: 20px;
 }
 
+/* 使段落文本加粗以突出显示 */
 p {
   font-weight: bold;
 }
 
+/* 设置图片圆角和尺寸，以确保视觉上的一致性和吸引力 */
 img {
   border-radius: 5px;
   height: 200px;

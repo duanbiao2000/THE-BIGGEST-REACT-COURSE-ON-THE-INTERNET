@@ -2,14 +2,23 @@ import { AiFillStar } from "react-icons/ai";
 
 const data = [
   {
+    // 图片链接
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+    // 商品标题
     title: "Nike Air Monarch IV",
+    // 评价星数图标
     star: <AiFillStar className="rating-star" />,
+    // 评价数量
     reviews: "(123 reviews)",
+    // 原价
     prevPrice: "$140,00",
+    // 新价
     newPrice: "200",
+    // 品牌公司
     company: "Nike",
+    // 商品颜色
     color: "white",
+    // 商品类别
     category: "sneakers",
   },
   {

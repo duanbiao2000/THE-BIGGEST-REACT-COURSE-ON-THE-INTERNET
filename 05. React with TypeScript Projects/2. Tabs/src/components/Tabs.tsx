@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { FaHome, FaInfoCircle, FaPhone } from "react-icons/fa";
-import { GoProjectSymlink } from "react-icons/go";
-import { SiCoursera } from "react-icons/si";
-import Card from "./Card";
-import About from "./About";
-import Contact from "./Contact";
+import { useState } from 'react';
+import { FaHome, FaInfoCircle, FaPhone } from 'react-icons/fa';
+import { GoProjectSymlink } from 'react-icons/go';
+import { SiCoursera } from 'react-icons/si';
+import Card from './Card';
+import About from './About';
+import Contact from './Contact';
 
 const tabs = [
   {
-    id: "home",
+    id: 'home',
     icon: <FaHome />,
-    label: "Home",
+    label: 'Home',
     content: (
       <div className="flex flex-wrap">
         {Array.from({ length: 6 }).map((_, index) => (
@@ -25,15 +25,15 @@ const tabs = [
     ),
   },
   {
-    id: "about",
+    id: 'about',
     icon: <FaInfoCircle />,
-    label: "About",
+    label: 'About',
     content: <About />,
   },
   {
-    id: "projects",
+    id: 'projects',
     icon: <GoProjectSymlink />,
-    label: "Projects",
+    label: 'Projects',
     content: (
       <div className="flex flex-wrap">
         {Array.from({ length: 6 }).map((_, index) => (
@@ -48,9 +48,9 @@ const tabs = [
     ),
   },
   {
-    id: "courses",
+    id: 'courses',
     icon: <SiCoursera />,
-    label: "Courses",
+    label: 'Courses',
     content: (
       <div className="flex flex-wrap">
         {Array.from({ length: 6 }).map((_, index) => (
@@ -65,9 +65,9 @@ const tabs = [
     ),
   },
   {
-    id: "contact",
+    id: 'contact',
     icon: <FaPhone />,
-    label: "Contact",
+    label: 'Contact',
     content: <Contact />,
   },
 ];
@@ -82,7 +82,7 @@ const Tabs = () => {
           <button
             key={tab.id}
             className={`flex-1 text-center py-2 px-4 font-medium text-sm ${
-              activeTab === tab.id ? "border-b-2 " : "text-gray-600"
+              activeTab === tab.id ? 'border-b-2 ' : 'text-gray-600'
             }`}
             onClick={() => setActiveTab(tab.id)}
           >

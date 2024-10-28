@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+// 导入外部字体，增加页面的视觉多样性
 
 * {
   margin: 0;
@@ -6,6 +7,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+// 重置所有元素的样式，确保在不同浏览器中的一致性
 
 body section {
   height: 100vh;
@@ -14,6 +16,7 @@ body section {
   justify-content: center;
   align-items: center;
 }
+// 设置 body 下的 section 元素样式，使其高度占满视口并居中内容
 
 button {
   position: absolute;
@@ -23,9 +26,11 @@ button {
   background: transparent;
   cursor: pointer;
 }
+// 定义按钮的样式，使其位于页面右上角，背景透明，鼠标悬停时显示指针
 
 section.content h1 {
   font-size: 5rem;
   font-family: "Bungee Outline", cursive;
   line-height: 80px;
 }
+// 设置内容区域的标题样式，使用导入的字体并调整行高，以增强可读性和视觉效果

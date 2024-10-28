@@ -1,3 +1,9 @@
+/**
+ * 导航栏样式设置
+ * 使用flex布局，使导航栏内容在主轴上均匀分布，并在垂直轴上居中
+ * 添加底部边框以增强视觉分隔效果
+ * 设置较高的z-index以确保导航栏在其他内容之上显示
+ */
 nav {
   display: flex;
   border-bottom: 2px solid #f3f3f3;
@@ -8,6 +14,11 @@ nav {
   margin-left: 2rem;
 }
 
+/**
+ * 输入框样式设置
+ * 提供内边距、无边框、浅色背景，以提升用户输入体验
+ * 使用相对定位和适当宽度，以适应不同输入内容
+ */
 input {
   padding: 12px 20px;
   border: none;
@@ -19,6 +30,10 @@ input {
   width: 14rem;
 }
 
+/**
+ * 导航栏图标样式设置
+ * 统一图标大小和左边距，以保持导航栏元素间的视觉一致性
+ */
 .nav-icons {
   width: 1.5rem;
   height: 1.5rem;
